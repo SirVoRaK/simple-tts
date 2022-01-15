@@ -12,7 +12,8 @@
 
 body {
     display: flex;
-    height: 100vh;
+    width: 794px;
+    height: 521px;
     gap: 0px;
     background-color: hsl(0, 0%, 90%);
     padding: 20px;
