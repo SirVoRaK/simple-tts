@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    gap: 0px;
+    background-color: hsl(0, 0%, 90%);
+    padding: 20px;
+    gap: 50px;
+}
+
+label span.title,
+button.select-folder,
+button.play {
+    background-color: hsl(0 0% 90%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+}
+label span.title:hover,
+button.select-folder:hover,
+button.play:hover {
+    background-color: hsl(0 0% 85%);
+}
+label #file {
+    display: none;
+}
+
+.txt {
+    background-color: hsl(0 0% 90%);
+    padding: 10px 20px;
+    border-radius: 1000px;
+    font-size: 1rem;
+    width: 80%;
+    margin-top: 130px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    background-image: url(png/info.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 12px;
+}
+
+.info h1 {
+    font-size: 1.56rem;
+}
+
+.info > div {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.info label {
+    margin: 30px 0 20px 0;
+    display: flex;
+}
+
+.info label input {
+    display: none;
+}
+
+.info img {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 4px;
+}
+
+div.play {
+    background-image: url(png/text.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt {
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+button.play {
+    background-color: transparent;
+    color: transparent;
+    background-image: url(png/play.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 335px;
+    height: 80px;
+    margin: 35px 0 0 30px;
+}
+
+button.play:hover {
+    background-color: transparent;
+}
+
+.load {
+    background-image: url(png/load.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px;
+}
+
+.load > label,
+.load > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.load span.title,
+.load button {
+    border-radius: 100px !important;
+    background-color: #fff !important;
+    white-space: nowrap;
+}
+
+.load button {
+    margin-top: -5px;
+}

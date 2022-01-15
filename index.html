@@ -4,15 +4,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
+        <title>AMA SYNTH</title>
         <script type="module" src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Upload your own</h1>
-        <input type="file" class="ini" accept=".ini" />
-        <input type="text" class="folder" placeholder="Folder with the songs" />
-        <h1 id="PlayAu">insira o texto</h1>
-        <input type="text" id="inp" />
-        <button class="play">Play</button>
+        <div class="main">
+            <div class="play">
+                <input type="text" id="inp" class="txt" placeholder="Text" />
+                <button class="play">Play</button>
+            </div>
+
+            <div class="load">
+                <label for="file">
+                    <span class="title">Select .ini file</span>
+                    <span class="name"></span>
+                    <input id="file" type="file" class="ini" accept=".ini" />
+                </label>
+                <div class="select">
+                    <button class="select-folder">Select folder with songs</button>
+                    <span class="select-folder"></span>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <h1>voicebank</h1>
+            <label for="img">
+                <img src="img/placeholder.webp" />
+                <input type="file" accept="image/png,image/jpeg,image/bmp" id="img" />
+            </label>
+            <div>
+                <h2>about</h2>
+                <p class="wav">124 .wav</p>
+                <p class="ini">486 .ini</p>
+            </div>
+        </div>
     </body>
 </html>
